@@ -116,4 +116,8 @@ public enum Sport {
 	public Place getPlace() {
 		return this.place;	
 	}
+	
+	public String toString() {
+		return "| Sport > " + this.actualName + " | Place > " + this.place + " | N. members" + this.noTeamMembers; 
+	}
 }
