@@ -113,4 +113,7 @@ public enum Sport {
 		return false;
 	}
 	
+	public Place getPlace() {
+		return this.place;	
+	}
 }
