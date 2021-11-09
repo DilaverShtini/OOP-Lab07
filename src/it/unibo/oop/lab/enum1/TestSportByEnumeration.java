@@ -1,5 +1,8 @@
 package it.unibo.oop.lab.enum1;
 
+import it.unibo.oop.lab.nesting1.SportSocialNetworkUserImpl;
+import it.unibo.oop.lab.socialnetwork.User;
+
 /**
  * This is going to act as a test for
  * {@link it.unibo.oop.lab.enum1.SportSocialNetworkUserImpl}
@@ -19,11 +22,12 @@ public final class TestSportByEnumeration {
      *            ignored
      */
     public static void main(final String... args) {
-        /*
-         * [TEST DEFINITION]
-         * 
-         * By now, you know how to do it
-         */
-        // TODO
-    }
+      
+    	 final SportSocialNetworkUserImpl<User> dcassani = new SportSocialNetworkUserImpl<>("Davide", "Cassani", "dcassani", 53);
+         final SportSocialNetworkUserImpl<User> becclestone = new SportSocialNetworkUserImpl<>("Bernie", "Ecclestone", "becclestone", 83);
+         final SportSocialNetworkUserImpl<User> falonso = new SportSocialNetworkUserImpl<>("Fernando", "Alonso", "falonso", 34);
+
+         
+    
+	}
 }
