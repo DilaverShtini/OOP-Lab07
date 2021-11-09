@@ -106,4 +106,11 @@ public enum Sport {
 		return false;
 	}
 	
+	public boolean isIndoorSport() {
+		if(this.place.equals(Place.INDOOR)) {
+			return true;
+		}
+		return false;
+	}
+	
 }
