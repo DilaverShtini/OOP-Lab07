@@ -103,7 +103,7 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
      * sport is individual if the number of team member is = 1.
      * 
      * @return the set of individual sport this user practices/follows
-     */
+     */ 
     /*
      * public Set<Sport> getIndividualSports() { return null; }
      * 
@@ -118,4 +118,13 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
     /*
      * public Set<Sport> getSportPracticedInPlace(Place p) { return null; }
      */
+    public Set<Sport> getIndividualSports(){
+    	Set<Sport> sportsInd = new LinkedHashSet<>();
+    	for(Sport sport: this.sports) {
+    		if(sport.isIndividualSport()) {
+    			sportsInd.add(sport);
+    		}
+    	}
+    	return sportsInd;
+    }
 }
