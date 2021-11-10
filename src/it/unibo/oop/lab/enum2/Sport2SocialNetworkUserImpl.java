@@ -127,4 +127,14 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
     	}
     	return sportsInd;
     }
+    
+    public Set<Sport> getSportPracticedInPlace(Place p){
+    	Set<Sport> sportPlace = new LinkedHashSet<>();
+    	for(Sport sport: this.sports) {
+    		if(sport.getPlace().equals(p)) {
+    			sportPlace.add(sport);
+    		}
+    	}
+    	return sportPlace;
+    }
 }
